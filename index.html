@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 500px;
+            /* border: 2px solid black; */
+            margin: 50px auto;
+            position: relative;
+
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: all 0.4s;
+        }
+
+        .box:hover img {
+            transform: scale(0);
+        }
+
+        .content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            color: rgb(115, 255, 0);
+            text-align: center;
+            padding: 15px;
+            box-sizing: border-box;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            transform: rotate(-180deg) scale(0);
+            transition: all 0.4s;
+            transition-delay: 0.4s;
+        }
+
+        .box:hover .content {
+            transform: rotate(0deg) scale(1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="./images/family.PNG" alt="">
+        <div class="content">
+            <h1>WE are Family</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptas, odit, consequatur nemo saepe
+                asperiores adipisci non vel hic at commodi modi quo velit. Officia nam, dolore dolorum omnis sunt, hic
+                debitis, ut sequi minima soluta ipsa quos perferendis explicabo?</p>
+        </div>
+    </div>
+</body>
+
+</html>
